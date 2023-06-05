@@ -60,6 +60,8 @@ namespace ScanFile
 
             foreach (DirectoryInfo subDir in dirInfo.GetDirectories())
             {
+                CCartella tmp = new CCartella(subDir.Name, CalcolaPesoCartella(subDir.FullName).ToString(), subDir.FullName);
+                Droot.pushDirectory(tmp);
                 scansiona(subDir, Droot);
             }
         }

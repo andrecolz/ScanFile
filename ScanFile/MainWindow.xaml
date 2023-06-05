@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScanFile"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ScanFile" Height="450" Width="800">
     <Grid Background="#FFF4EEE0">
-        <TreeView x:Name="tre" Margin="141,98,372,23"/>
-        <Rectangle HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF635985" MinWidth="800" MaxWidth="999999"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="231*"/>
+            <ColumnDefinition Width="569*"/>
+        </Grid.ColumnDefinitions>
+        <TreeView x:Name="tre" Margin="19,91,494,30" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF635985" MinWidth="800" MaxWidth="999999" Grid.ColumnSpan="2"/>
         <Button x:Name="selezioneDc" Content="" HorizontalAlignment="Left" Margin="19,2,0,0" VerticalAlignment="Top" Width="50" Click="selezioneDc_Click" Height="50" BorderBrush="#FF635985">
             <Button.Background>
                 <ImageBrush ImageSource="/open-folder.png"/>

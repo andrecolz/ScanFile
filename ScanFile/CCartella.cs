@@ -26,7 +26,7 @@ namespace ScanFile
             listF.Add(file);
         }
 
-        public void pushDirector(CCartella directory)
+        public void pushDirectory(CCartella directory)
         {
             listD.Add(directory);
         }
