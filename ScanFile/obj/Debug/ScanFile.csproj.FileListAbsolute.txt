@@ -1,0 +1,16 @@
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\bin\Debug\ScanFile.exe.config
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\bin\Debug\ScanFile.exe
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\bin\Debug\ScanFile.pdb
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.csproj.AssemblyReference.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.csproj.SuggestedBindingRedirects.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\MainWindow.g.cs
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\App.g.cs
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile_MarkupCompile.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile_MarkupCompile.lref
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\MainWindow.baml
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.g.resources
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.Properties.Resources.resources
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.csproj.GenerateResource.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.csproj.CoreCompileInputs.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.exe
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFile\obj\Debug\ScanFile.pdb

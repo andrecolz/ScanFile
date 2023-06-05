@@ -1,0 +1,23 @@
+﻿<Window x:Class="ScanFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanFile"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFF4EEE0">
+        <TreeView x:Name="tre" Margin="141,98,372,23"/>
+        <Rectangle HorizontalAlignment="Center" Height="53" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF635985" MinWidth="800" MaxWidth="999999"/>
+        <Button x:Name="selezioneDc" Content="" HorizontalAlignment="Left" Margin="19,2,0,0" VerticalAlignment="Top" Width="50" Click="selezioneDc_Click" Height="50" BorderBrush="#FF635985">
+            <Button.Background>
+                <ImageBrush ImageSource="/open-folder.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="74,2,0,0" VerticalAlignment="Top" Width="46" Height="46" BorderBrush="#FF635985">
+            <Button.Background>
+                <ImageBrush ImageSource="/export.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

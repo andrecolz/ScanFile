@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScanFile", "ScanFile\ScanFile.csproj", "{0CBF69C4-B8CD-42CE-8074-71992EDF233E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CBF69C4-B8CD-42CE-8074-71992EDF233E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBF69C4-B8CD-42CE-8074-71992EDF233E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBF69C4-B8CD-42CE-8074-71992EDF233E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBF69C4-B8CD-42CE-8074-71992EDF233E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F73B82D-3C59-4314-9027-2A4CDA510ED1}
+	EndGlobalSection
+EndGlobal
