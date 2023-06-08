@@ -1,0 +1,15 @@
+REPORT DIFFERENZE TRA test1.json E test2.json
+-test2.json ha meno estensioni rispetto test1.json
+-test2.json ha meno file rispetto test1.json
+
+Estensione: .dll
+Quantita: ha 2 file in più
+Dimensione: ha 10000000 byte in più
+
+Estensione: .exe
+Quantita: ha 2 file in più
+Dimensione: ha 293 byte in più
+
+Estensione: .msi
+Quantita: ha 1 file in meno
+Dimensione: ha 5015 byte in meno

@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileApp\\ScanFileApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileApp\\ScanFileApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileApp\\ScanFileApp.csproj",
+        "projectName": "ScanFileApp",
+        "projectPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileApp\\ScanFileApp.csproj",
+        "packagesPath": "C:\\Users\\Scansione1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Scansione1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj": {
+                "projectPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
+        "projectName": "ScanFileLIb",
+        "projectPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
+        "packagesPath": "C:\\Users\\Scansione1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Scansione1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

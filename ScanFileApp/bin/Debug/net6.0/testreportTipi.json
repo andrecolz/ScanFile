@@ -1,0 +1,318 @@
+{
+  "listaTipi": [
+    {
+      "estensione": ".dll",
+      "peso": 616737368,
+      "quantita": 2061,
+      "perc": 69.42
+    },
+    {
+      "estensione": ".cab",
+      "peso": 127398034,
+      "quantita": 1,
+      "perc": 14.34
+    },
+    {
+      "estensione": ".sys",
+      "peso": 37176032,
+      "quantita": 6,
+      "perc": 4.18
+    },
+    {
+      "estensione": ".exe",
+      "peso": 24234592,
+      "quantita": 16,
+      "perc": 2.73
+    },
+    {
+      "estensione": ".msi",
+      "peso": 16539136,
+      "quantita": 8,
+      "perc": 1.86
+    },
+    {
+      "estensione": ".zip",
+      "peso": 14378267,
+      "quantita": 1,
+      "perc": 1.62
+    },
+    {
+      "estensione": ".so",
+      "peso": 8952384,
+      "quantita": 8,
+      "perc": 1.01
+    },
+    {
+      "estensione": ".jpg",
+      "peso": 8493182,
+      "quantita": 12,
+      "perc": 0.96
+    },
+    {
+      "estensione": ".traineddata",
+      "peso": 8103942,
+      "quantita": 3,
+      "perc": 0.91
+    },
+    {
+      "estensione": ".xml",
+      "peso": 7249727,
+      "quantita": 17,
+      "perc": 0.82
+    },
+    {
+      "estensione": ".nupkg",
+      "peso": 5683516,
+      "quantita": 51,
+      "perc": 0.64
+    },
+    {
+      "estensione": ".inf",
+      "peso": 3571351,
+      "quantita": 7,
+      "perc": 0.4
+    },
+    {
+      "estensione": ".ttf",
+      "peso": 2143368,
+      "quantita": 3,
+      "perc": 0.24
+    },
+    {
+      "estensione": ".json",
+      "peso": 1651004,
+      "quantita": 20,
+      "perc": 0.19
+    },
+    {
+      "estensione": ".dylib",
+      "peso": 1594568,
+      "quantita": 1,
+      "perc": 0.18
+    },
+    {
+      "estensione": ".p7s",
+      "peso": 958603,
+      "quantita": 51,
+      "perc": 0.11
+    },
+    {
+      "estensione": ".bin",
+      "peso": 735067,
+      "quantita": 2,
+      "perc": 0.08
+    },
+    {
+      "estensione": ".png",
+      "peso": 431937,
+      "quantita": 56,
+      "perc": 0.05
+    },
+    {
+      "estensione": ".pdb",
+      "peso": 400372,
+      "quantita": 14,
+      "perc": 0.05
+    },
+    {
+      "estensione": ".txt",
+      "peso": 356881,
+      "quantita": 16,
+      "perc": 0.04
+    },
+    {
+      "estensione": ".manifest",
+      "peso": 228797,
+      "quantita": 1,
+      "perc": 0.03
+    },
+    {
+      "estensione": ".cache",
+      "peso": 226600,
+      "quantita": 19,
+      "perc": 0.03
+    },
+    {
+      "estensione": "",
+      "peso": 204319,
+      "quantita": 2,
+      "perc": 0.02
+    },
+    {
+      "estensione": ".suo",
+      "peso": 203264,
+      "quantita": 2,
+      "perc": 0.02
+    },
+    {
+      "estensione": ".vsidx",
+      "peso": 192160,
+      "quantita": 8,
+      "perc": 0.02
+    },
+    {
+      "estensione": ".odt",
+      "peso": 140495,
+      "quantita": 2,
+      "perc": 0.02
+    },
+    {
+      "estensione": ".v2",
+      "peso": 136378,
+      "quantita": 2,
+      "perc": 0.02
+    },
+    {
+      "estensione": ".cat",
+      "peso": 82444,
+      "quantita": 6,
+      "perc": 0.01
+    },
+    {
+      "estensione": ".cs",
+      "peso": 68754,
+      "quantita": 28,
+      "perc": 0.01
+    },
+    {
+      "estensione": ".resources",
+      "peso": 53090,
+      "quantita": 2,
+      "perc": 0.01
+    },
+    {
+      "estensione": ".html",
+      "peso": 11946,
+      "quantita": 1,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".icm",
+      "peso": 9432,
+      "quantita": 3,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".csproj",
+      "peso": 6664,
+      "quantita": 3,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".baml",
+      "peso": 6309,
+      "quantita": 3,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".xaml",
+      "peso": 6207,
+      "quantita": 4,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".lnk",
+      "peso": 6033,
+      "quantita": 4,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".resx",
+      "peso": 5612,
+      "quantita": 1,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".config",
+      "peso": 5477,
+      "quantita": 8,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".sln",
+      "peso": 3246,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".md",
+      "peso": 3067,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".props",
+      "peso": 2290,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".application",
+      "peso": 2143,
+      "quantita": 1,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".iss",
+      "peso": 759,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".editorconfig",
+      "peso": 658,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".targets",
+      "peso": 639,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".ini",
+      "peso": 564,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".lref",
+      "peso": 266,
+      "quantita": 1,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".bat",
+      "peso": 212,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".settings",
+      "peso": 201,
+      "quantita": 1,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".lock",
+      "peso": 0,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".buildwithskipanalyzers",
+      "peso": 0,
+      "quantita": 2,
+      "perc": 0.0
+    },
+    {
+      "estensione": ".copycomplete",
+      "peso": 0,
+      "quantita": 2,
+      "perc": 0.0
+    }
+  ],
+  "nEstensioni": 52,
+  "nFile": 2426
+}
