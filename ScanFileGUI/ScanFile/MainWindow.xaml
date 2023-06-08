@@ -1,0 +1,63 @@
+﻿<Window x:Class="ScanFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScanFile"
+        mc:Ignorable="d"
+        Title="ScanFile" Height="933" Width="1970" Icon="/search-file.png" WindowState="Maximized">
+    <Window.Resources>
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#FF709C97">
+        <Grid.ColumnDefinitions>
+
+
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lstpTipi" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,82,43
+                 ,28" HorizontalAlignment="Right" Width="233" Background="#FFDBDFEA" MaxWidth="500" FontFamily="MS LineDraw" MinWidth="450"/>
+        <TreeView x:Name="TreeFile" Margin="274,82,274,28" MaxWidth="900" Background="#FFE5F9DB" FontFamily="MS LineDraw" FontWeight="Bold"/>
+        <Grid Margin="0,0,0,0" Background="#FF374259" Height="60" MinHeight="60" MaxHeight="60" VerticalAlignment="Top">
+            <Button x:Name="selezioneDc" Content="" HorizontalAlignment="Left" Margin="43,0,0,0" VerticalAlignment="Center" Width="46" Click="selezioneDc_Click" Height="46" BorderBrush="{x:Null}" Foreground="{x:Null}" Style="{StaticResource MyButton}" OverridesDefaultStyle="True">
+                <Button.Background>
+                    <ImageBrush ImageSource="/file.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Importa" Content="" HorizontalAlignment="Left" Margin="153,3,0,0" VerticalAlignment="Top" Width="46" Height="46" BorderBrush="{x:Null}" Click="Importa_Click" Foreground="{x:Null}" Style="{StaticResource MyButton}" OverridesDefaultStyle="True">
+                <Button.Background>
+                    <ImageBrush ImageSource="/import.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Esporta" Content="" HorizontalAlignment="Left" Margin="98,3,0,0" VerticalAlignment="Top" Width="46" Height="46" BorderBrush="{x:Null}" Click="Esporta_Click" Foreground="{x:Null}" Style="{StaticResource MyButton}" OverridesDefaultStyle="True">
+                <Button.Background>
+                    <ImageBrush ImageSource="/export.png"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="lblTempo" Content="" HorizontalAlignment="Left" Margin="1770,0,0,0" VerticalAlignment="Center" Height="36" Width="105" Background="#FF088395" HorizontalContentAlignment="Right" FontSize="15" FontFamily="MS LineDraw" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="1773,0,0,0" VerticalAlignment="Center" Height="30" Width="30">
+                <Label.Background>
+                    <ImageBrush ImageSource="/time-left.png"/>
+                </Label.Background>
+            </Label>
+        </Grid>
+        <ListBox x:Name="lstbPesanti" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="43,82,0,28" Width="226" HorizontalAlignment="Left" Background="#FFDBDFEA" MaxWidth="500" VerticalContentAlignment="Top" FontFamily="MS LineDraw" MinWidth="450"/>
+    </Grid>
+</Window>
