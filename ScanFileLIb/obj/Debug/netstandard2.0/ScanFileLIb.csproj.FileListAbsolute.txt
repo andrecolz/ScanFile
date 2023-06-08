@@ -1,0 +1,10 @@
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\bin\Debug\netstandard2.0\ScanFileLIb.deps.json
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\bin\Debug\netstandard2.0\ScanFileLIb.dll
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\bin\Debug\netstandard2.0\ScanFileLIb.pdb
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.csproj.AssemblyReference.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.AssemblyInfoInputs.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.AssemblyInfo.cs
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.csproj.CoreCompileInputs.cache
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.dll
+C:\Users\Scansione1\Desktop\ScanFile\ScanFile\ScanFileLIb\obj\Debug\netstandard2.0\ScanFileLIb.pdb
