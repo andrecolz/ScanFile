@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CCartella xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <nome>test</nome>
+  <dimensione>0</dimensione>
+  <path>C:\Users\Scansione1\Desktop\test</path>
+  <listF>
+    <CFile>
+      <nome>ciao.txt</nome>
+      <dimensione>0</dimensione>
+      <path>C:\Users\Scansione1\Desktop\test</path>
+    </CFile>
+    <CFile>
+      <nome>ciao2.txt</nome>
+      <dimensione>0</dimensione>
+      <path>C:\Users\Scansione1\Desktop\test</path>
+    </CFile>
+  </listF>
+  <listD>
+    <CCartella>
+      <nome>cartella1</nome>
+      <dimensione>0</dimensione>
+      <path>C:\Users\Scansione1\Desktop\test\cartella1</path>
+      <listF>
+        <CFile>
+          <nome>salve.txt</nome>
+          <dimensione>0</dimensione>
+          <path>C:\Users\Scansione1\Desktop\test\cartella1</path>
+        </CFile>
+      </listF>
+      <listD />
+    </CCartella>
+  </listD>
+</CCartella>
