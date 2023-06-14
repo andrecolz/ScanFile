@@ -9,3 +9,6 @@ static void Main(string[] args)
 - args[3] ---> percorso file export
 - args[4] ---> percorso 1° file di confronto
 - args[5] ---> percorso 2° file di confronto
+
+
+# ScanFile GUI
