@@ -12,9 +12,9 @@ static void Main(string[] args)
 
 
 # ScanFile GUI
-- <img src="ScanFileGUI/ScanFile/file.png" width="100" height="75"> seleziona il path di ricerca
-- <img src="ScanFileGUI/ScanFile/export.png" width="100" height="75"> pulsante per l'export
-- <img src="ScanFileGUI/ScanFile/import.png" width="100" height="75"> pulsante per l'import
+- <img src="ScanFileGUI/ScanFile/file.png" width="75" height="75"> seleziona il path di ricerca
+- <img src="ScanFileGUI/ScanFile/export.png" width="75" height="75"> pulsante per l'export
+- <img src="ScanFileGUI/ScanFile/import.png" width="75" height="75"> pulsante per l'import
 
 
 # ScanFile LIB
