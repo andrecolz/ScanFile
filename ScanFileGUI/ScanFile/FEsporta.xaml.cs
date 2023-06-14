@@ -38,7 +38,6 @@ namespace ScanFile
             {
                 metodi.toXml(lblPer.Content + "\\" + txtNmFile.Text, ref Droot);
                 MessageBox.Show("File esportato", "avviso");
-                this.Close();
             }
             else
             {
@@ -52,7 +51,6 @@ namespace ScanFile
             {
                 metodi.toJson(lblPer.Content + "\\" + txtNmFile.Text, ref Droot);
                 MessageBox.Show("File esportato", "avviso");
-                this.Close();
             }
             else
             {

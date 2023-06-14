@@ -62,6 +62,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Confronta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FEsporta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +81,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Confronta.xaml.cs">
+      <DependentUpon>Confronta.xaml</DependentUpon>
     </Compile>
     <Compile Include="FEsporta.xaml.cs">
       <DependentUpon>FEsporta.xaml</DependentUpon>
@@ -139,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="time-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="compare.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

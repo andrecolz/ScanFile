@@ -46,80 +46,19 @@ namespace ScanFile
             }
         }
 
-        private void btnPath2_Click(object sender, RoutedEventArgs e)
+        private void btnImporta_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog fbd = new OpenFileDialog();
-            var result = fbd.ShowDialog();
-            if (result.ToString().Equals("OK"))
+            CCartella Droot;
+            if (lblpath1.Content != null)
             {
-                lblpath2.Content = fbd.FileName;
-            }
-            else if (result.ToString().Equals("Cancel"))
-            {
-                return;
-            }
-        }
-
-        private void btnConfronto_Click(object sender, RoutedEventArgs e)
-        {
-            CUtilities metodi = new CUtilities();
-            FileInfo fileInfo = new FileInfo(lblpath1.Content.ToString());
-            FileInfo fileInfo2 = new FileInfo(lblpath2.Content.ToString());
-            CListaTipi lst1;
-            CListaTipi lst2;
-            using (StreamReader file = File.OpenText(lblpath1.Content.ToString()))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                lst1 = (CListaTipi)serializer.Deserialize(file, typeof(CListaTipi));
-            }
-            using (StreamReader file = File.OpenText(lblpath2.Content.ToString()))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                lst2 = (CListaTipi)serializer.Deserialize(file, typeof(CListaTipi));
-            }
-
-
-            var differenze = new CListaTipi();
-            for (int j = 0; j < lst2.nEstensioni; j++)
-            {
-                bool found = false;
-                for (int i = 0; i < lst1.nEstensioni; i++)
+                using (StreamReader file = File.OpenText(lblpath1.Content.ToString()))
                 {
-                    if (lst1.get(i).estensione.Equals(lst2.get(j).estensione))
-                    {
-                        var diff = new CtipiFile();
-                        bool check1 = false, check2 = false;
-                        diff.estensione = lst1.get(i).estensione;
-                        if (lst1.get(i).quantita == lst2.get(j).quantita) { diff.quantita = lst1.get(i).quantita; }
-                        if (lst1.get(i).quantita < lst2.get(j).quantita) { diff.quantita = (lst2.get(j).quantita - lst1.get(i).quantita); check1 = true; }
-                        if (lst1.get(i).quantita > lst2.get(j).quantita) { diff.quantita = (lst1.get(i).quantita - lst2.get(j).quantita); check1 = true; }
-
-                        if (lst1.get(i).peso == lst2.get(j).peso) { diff.peso = lst1.get(i).peso; }
-                        if (lst1.get(i).peso < lst2.get(j).peso) { diff.peso = (lst2.get(j).peso - lst1.get(i).peso); check2 = true; }
-                        if (lst1.get(i).peso > lst2.get(j).peso) { diff.peso = (lst1.get(i).peso - lst2.get(j).peso); check2 = true; }
-
-                        if (check1 && check2) { differenze.add(diff); differenze.nFile += diff.quantita; }
-
-                        found = true;
-                        break;
-                    }
+                    JsonSerializer serializer = new JsonSerializer();
+                    Droot = (CCartella)serializer.Deserialize(file, typeof(CCartella));
                 }
-
-                if (!found)
-                {
-                    var diff = new CtipiFile();
-                    diff.estensione = lst2.get(j).estensione;
-                    diff.quantita = lst2.get(j).quantita;
-                    diff.peso = lst2.get(j).peso;
-
-                    differenze.add(diff);
-                    differenze.nFile += diff.quantita;
-                }
-            }
-
-            for(int i = 0; i < differenze.nEstensioni; i++)
-            {
-                lstbElenco.Items.Add(espandi("Estensione:", 17) + differenze.listaTipi[i].estensione + espandi("\nQuantita:", 18) + differenze.listaTipi[i].quantita + espandi("\nPeso:", 18) + differenze.listaTipi[i].peso.Bytes().Humanize() + espandi("\nPercentuale:", 18) + differenze.listaTipi[i].perc + "%\n");
+                MainWindow mainWindow = new MainWindow(Droot, 1);
+                mainWindow.Show();
+                this.Close();
             }
         }
 
@@ -130,7 +69,6 @@ namespace ScanFile
             {
                 str += " ";
             }
-            n = str.Length;
             return str;
         }
     }

@@ -5,18 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScanFile"
         mc:Ignorable="d"
-        Title="importazione" Height="450" Width="800">
+        Title="importazione" Height="350" Width="450">
     <Grid Background="#FFC8B6A6">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="61*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnPath1" Content="File 1:" HorizontalAlignment="Left" Height="27" Margin="51,73,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115" Click="Button_Click"/>
-        <Button x:Name="btnPath2" Content="File 2:" HorizontalAlignment="Left" Margin="51,100,0,0" Grid.Row="1" VerticalAlignment="Top"  Height="27" Width="115" Click="btnPath2_Click"/>
-        <Label x:Name="lblpath1" HorizontalAlignment="Left" Margin="166,73,0,0" Grid.Row="1" VerticalAlignment="Top" Height="27" Width="239" Background="White"/>
-        <Button x:Name="btnConfronto" Content="Confronta:" HorizontalAlignment="Left" Height="27" Margin="51,127,0,0" Grid.Row="1" VerticalAlignment="Top" Width="354" Click="btnConfronto_Click"/>
-        <ListBox x:Name="lstbElenco" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="416,5,10,10" Background="#FFDDE6ED" FontFamily="MS LineDraw"/>
-        <Label x:Name="lblpath2" HorizontalAlignment="Left" Margin="166,100,0,0" Grid.Row="1" VerticalAlignment="Top" Height="27" Width="239" Background="White"/>
+        <Button x:Name="btnPath1" Content="File:" HorizontalAlignment="Left" Height="27" Margin="37,117,0,0" Grid.Row="1" VerticalAlignment="Top" Width="115" Click="Button_Click"/>
+        <Label x:Name="lblpath1" HorizontalAlignment="Left" Margin="152,117,0,0" Grid.Row="1" VerticalAlignment="Top" Height="27" Width="239" Background="White"/>
+        <Button x:Name="btnImporta" Content="importa" HorizontalAlignment="Left" Height="27" Margin="37,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="354" Click="btnImporta_Click"/>
 
     </Grid>
 </Window>
