@@ -12,6 +12,6 @@ static void Main(string[] args)
 
 
 # ScanFile GUI
-![ghrhr](ScanFileGUI/ScanFile/file.png | width=100)
-![rhsrh](ScanFileGUI/ScanFile/export.png | width=100)
-![rshsr](ScanFileGUI/ScanFile/import.png | width=100)
+<img src="ScanFileGUI/ScanFile/file.png" width="100" height="100">
+<img src="ScanFileGUI/ScanFile/export.png" width="100" height="100">
+<img src="ScanFileGUI/ScanFile/import.png" width="100" height="100">
