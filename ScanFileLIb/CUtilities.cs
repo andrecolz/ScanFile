@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 using Newtonsoft.Json;
 using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 using Humanizer;
+using System.Linq;
 
 namespace ScanFileLib
 {
@@ -35,33 +36,35 @@ namespace ScanFileLib
             DirectoryInfo dirInfo = new DirectoryInfo(path);
             long pesoTotale = 0;
 
-            foreach (FileInfo file in dirInfo.GetFiles())
+            try
             {
-                pesoTotale += file.Length;
-            }
+                foreach (FileInfo file in dirInfo.GetFiles())
+                {
+                    pesoTotale += file.Length;
+                }
 
-            foreach (DirectoryInfo subDir in dirInfo.GetDirectories())
-            {
-                pesoTotale += CalcolaPesoCartella(subDir.FullName);
+                foreach (DirectoryInfo subDir in dirInfo.GetDirectories())
+                {
+                    pesoTotale += CalcolaPesoCartella(subDir.FullName);
+                }
+            } catch (Exception e) { 
+                Console.WriteLine(e.Message);
             }
 
             return pesoTotale;
         }
 
-        public void calcolaPesanti(List<CFile> lfile)
+        public List<CFile> calcolaPesanti(List<CFile> lfile)
         {
-            for (int i = 0; i < lfile.Count - 1; i++)
-            {
-                for (int j = 0; j < lfile.Count - i - 1; j++)
-                {
-                    if (Int32.Parse(lfile[j].dimensione) < Int32.Parse(lfile[j + 1].dimensione))
-                    {
-                        CFile tempVar = lfile[j];
-                        lfile[j] = lfile[j + 1];
-                        lfile[j + 1] = tempVar;
-                    }
-                }
-            }
+            List<CFile> li = lfile.OrderByDescending(f => f.dimensione).ToList();
+            return li;
+        }
+
+        public List<CCartella> calcolaPesantiCartella(List<CCartella> cart)
+        {
+            List<CCartella> li = cart.OrderByDescending(f => f.dimensione).ToList();
+            return li;
+
         }
     }
 }

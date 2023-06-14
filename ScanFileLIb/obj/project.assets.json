@@ -1565,19 +1565,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Scansione1\\.nuget\\packages\\": {}
+    "C:\\Users\\scansione1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
+      "projectUniqueName": "C:\\Users\\scansione1\\Downloads\\ScanFile-13\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
       "projectName": "ScanFileLIb",
-      "projectPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
-      "packagesPath": "C:\\Users\\Scansione1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Scansione1\\Desktop\\ScanFile\\ScanFile\\ScanFileLIb\\obj\\",
+      "projectPath": "C:\\Users\\scansione1\\Downloads\\ScanFile-13\\ScanFile\\ScanFileLIb\\ScanFileLIb.csproj",
+      "packagesPath": "C:\\Users\\scansione1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\scansione1\\Downloads\\ScanFile-13\\ScanFile\\ScanFileLIb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Scansione1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\scansione1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

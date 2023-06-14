@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace ScanFileLib
     public class CCartella
     {
         public string nome { get; set; }
-        public string dimensione { get; set; }
+        public long dimensione { get; set; }
         public double percentuale { get; set; }
         public string path { get; set; }
         public List<CFile> listF { get; set; }
@@ -18,14 +19,14 @@ namespace ScanFileLib
         public CCartella()
         {
             this.nome = "";
-            this.dimensione = "";
+            this.dimensione = 0;
             this.percentuale = 0.00;
             this.path = "";
             listF = new List<CFile>();
             listD = new List<CCartella>();
         }
 
-        public CCartella(string nome, string dimensione, double percentuale, string path)
+        public CCartella(string nome, long dimensione, double percentuale, string path)
         {
             this.nome = nome;
             this.dimensione = dimensione;

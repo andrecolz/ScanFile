@@ -9,7 +9,7 @@ namespace ScanFileLib
     public class CtipiFile
     {
         public string estensione { get; set; }
-        public int peso { get; set; }
+        public long peso { get; set; }
         public int quantita { get; set; }
         public double perc { get; set; }
 
@@ -21,7 +21,7 @@ namespace ScanFileLib
             this.perc = 0;
         }
 
-        public CtipiFile(string estensione, int peso, int quantita, double perc)
+        public CtipiFile(string estensione, long peso, int quantita, double perc)
         {
             this.estensione = estensione.ToLower();
             this.peso = peso;

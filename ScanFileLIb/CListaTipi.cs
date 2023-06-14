@@ -47,7 +47,7 @@ namespace ScanFileLib
         {
             for(int i = 0; i < listaTipi.Count; i++)
             {
-                double peso = Convert.ToDouble(listaTipi[i].peso);
+                long peso = listaTipi[i].peso;
                 double perc = (peso / ptot) * 100;
                 listaTipi[i].perc = Math.Round(perc, 2);
             }
@@ -62,20 +62,10 @@ namespace ScanFileLib
             }
         }
 
-        public void visualizzaOrdinati(int n)
+        public List<CtipiFile> visualizzaOrdinati(int n)
         {
-            for (int i = 0; i < listaTipi.Count - 1; i++)
-            {
-                for (int j = 0; j < listaTipi.Count - i - 1; j++)
-                {
-                    if (listaTipi[j].peso < listaTipi[j + 1].peso)
-                    {
-                        CtipiFile tempVar = listaTipi[j];
-                        listaTipi[j] = listaTipi[j + 1];
-                        listaTipi[j + 1] = tempVar;
-                    }
-                }
-            }
+            List<CtipiFile> tmp = listaTipi.OrderByDescending(f => f.peso).ToList();
+            return tmp;
         }
     }
 }
