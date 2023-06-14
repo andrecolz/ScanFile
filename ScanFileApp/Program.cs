@@ -18,7 +18,7 @@ class Program
         CUtilities metodi = new CUtilities();
 
         string[] args = new string[6];                                  // per debug
-        args[0] = "C:\\Users\\Scansione1\\Desktop";                     // args[0] ---> path
+        args[0] = "C:\\Users\\Scansione1\\Desktop";                     // args[0] ---> path di ricerca
         args[1] = "json";                                               // args[1] ---> tipo file export
         args[2] = "test";                                               // args[2] ---> nome file export
         args[3] = "C:\\Users\\Scansione1\\Desktop\\";                   // args[3] ---> percorso file export
@@ -30,13 +30,13 @@ class Program
         CListaTipi listatipi = new CListaTipi();
         DirectoryInfo dirInfo = new DirectoryInfo(args[0]);
         long pesoCartella = metodi.CalcolaPesoCartella(dirInfo.FullName);
-        CCartella Droot = new CCartella(dirInfo.Name, pesoCartella.ToString(), 100, args[0]);
+        CCartella Droot = new CCartella(dirInfo.Name, pesoCartella, 100, args[0]);
          
         scansiona(dirInfo, Droot, files, listatipi, Convert.ToDouble(pesoCartella));
 
         metodi.calcolaPesanti(files);
         Console.WriteLine("i 10 file più pesanti");
-        for (int i = 0; i < 10; i++) { Console.WriteLine(files[i].nome + " | " + Int32.Parse(files[i].dimensione).Bytes().Humanize()); }
+        for (int i = 0; i < 10; i++) { Console.WriteLine(files[i].nome + " | " + ByteSize.FromBytes(files[i].dimensione).Humanize()); }
 
         //listatipi.visualizza();
         listatipi.calcolaDiff(pesoCartella);
@@ -65,7 +65,7 @@ class Program
         {
             double peso = Convert.ToDouble(file.Length);
             double perc = (peso / ptot) * 100;
-            CFile ftmp = new CFile(file.Name, file.Length.ToString(), Math.Round(perc, 2), file.DirectoryName);          //string perc = per.ToString("P", CultureInfo.InvariantCulture);
+            CFile ftmp = new CFile(file.Name, file.Length, Math.Round(perc, 2), file.DirectoryName);          //string perc = per.ToString("P", CultureInfo.InvariantCulture);
             lfile.Add(ftmp);
             Droot.pushFile(ftmp);
 
@@ -75,9 +75,10 @@ class Program
 
         foreach (DirectoryInfo subDir in dirInfo.GetDirectories())
         {
-            double peso = Convert.ToDouble(metodi.CalcolaPesoCartella(subDir.FullName));
+            long pes = metodi.CalcolaPesoCartella(subDir.FullName);
+            double peso = Convert.ToDouble(pes);
             double perc = (peso / ptot) * 100;
-            CCartella dtmp = new CCartella(subDir.Name, peso.ToString(), Math.Round(perc, 2), subDir.FullName);                        //string perc = per.ToString("P", CultureInfo.InvariantCulture); 
+            CCartella dtmp = new CCartella(subDir.Name, pes, Math.Round(perc, 2), subDir.FullName);                        //string perc = per.ToString("P", CultureInfo.InvariantCulture); 
 
             Droot.pushDirectory(dtmp);
             scansiona(subDir, dtmp, lfile, listatipi, ptot);
@@ -87,8 +88,6 @@ class Program
     {
         Console.WriteLine("confronto");
         CUtilities metodi = new CUtilities();
-        FileInfo fileInfo = new FileInfo(path1);
-        FileInfo fileInfo2 = new FileInfo(path2);
         CListaTipi lst1;
         CListaTipi lst2;
         using (StreamReader file = File.OpenText(path1))
