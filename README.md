@@ -15,6 +15,7 @@ static void Main(string[] args)
 - <img src="ScanFileGUI/ScanFile/file.png" width="75" height="75"> seleziona il path di ricerca
 - <img src="ScanFileGUI/ScanFile/export.png" width="75" height="75"> pulsante per l'export
 - <img src="ScanFileGUI/ScanFile/import.png" width="75" height="75"> pulsante per l'import
+- <img src="ScanFileGUI/ScanFile/compare.png" width="75" height="75"> pulsante per confrontare due file json
 
 
 # ScanFile LIB
