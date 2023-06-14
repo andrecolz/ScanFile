@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("time-left.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("compare.png")]
 
 
