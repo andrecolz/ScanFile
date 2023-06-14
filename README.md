@@ -13,5 +13,5 @@ static void Main(string[] args)
 
 # ScanFile GUI
 <picture>
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="ScanFileGUI/ScanFile/file.png" style="Width: 50px, Height: 50px;">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="ScanFileGUI/ScanFile/file.png" style="Width: 5%">
 </picture>
