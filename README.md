@@ -15,3 +15,11 @@ static void Main(string[] args)
 - <img src="ScanFileGUI/ScanFile/file.png" width="100" height="100"> seleziona il path di ricerca
 - <img src="ScanFileGUI/ScanFile/export.png" width="100" height="100"> pulsante per l'export
 - <img src="ScanFileGUI/ScanFile/import.png" width="100" height="100"> pulsante per l'import
+
+
+# ScanFile LIB
+- `CCartella` è la classe principale e contiene oltre che a degli attributi e due liste una di CCartella e una di CFile
+- `CFile` è la classe grazie al quale si possono salvare le informazioni base di un file
+- `ClistaTipi` è la classe che contiene una lista di tutte le estensioni trovate dei file (.pdf ecc)
+- `CtipiFile` è la classe grazie al quale si possono salvare le informazioni da salvare in ClistaTipi
+- `CCartella` è una classe che contiene una serie di metodi come `toJson()` e `CalcolaPesoCartella()`
